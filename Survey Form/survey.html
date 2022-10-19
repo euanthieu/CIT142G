@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title> Baguio Residency Survey Form </title>
+  </head>
+  <body>
+    <h1 id="title"> In Baguio</h1>
+    <p id="description"> Baguio Residency Survey Form</p>
+
+    <form id="survey-form"> 
+
+      <label id="name-label" >Enter your name: <input required placeholder="name" id="name" type="text" /></label>
+ 
+      <label  id="email-label">Enter your email: <input required id="email" placeholder="email" type="email" /> </label>
+ 
+      <label id="number-label"> Enter your age: <input id="number" placeholder="number" type="number" min="0" max="101" /> </label>
+
+            <label id="year-label"> Enter your years of residency in Baguio: <input id="years" placeholder="number" type="number" min="0" max="101" /> </label>
+  <label><br></label>
+      Gender:
+      <select id="dropdown">
+        <option value="">Male</option>        
+        <option value="1">Female</option>
+      </select>  
+     
+      <label><br></label>
+
+      <label>Occupation: </label>
+      <label>
+      <input class="inline" value="1" name="radio1" type="radio" /> Student
+      </label>
+      <label>
+      <input class="inline" value="2" name="radio1" type="radio" /> Working
+    </label>
+          <label>
+      <input class="inline" value="1" name="radio1" type="radio" /> Retired
+      </label>
+  
+    <label><br></label>
+
+<label>
+      <input class="inline" value="terms-and-conditions" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+
+<label>
+      <input class="inline" value="spam-email" id="spam-email" type="checkbox" required name="spam-email" class="inline" /> I accept to be given update of the survey through email.
+</label>
+
+<label><br></label>
+
+      <label>
+        Additional Info. of Residency in Baguio.
+      <textarea> </textarea>
+      </label>
+      <input id="submit" type="submit" />
+    </form>
+
+  </body>  
+</html>
